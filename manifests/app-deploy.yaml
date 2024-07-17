@@ -6,14 +6,14 @@ spec:
   replicas: 2 # You can adjust the number of replicas as needed
   selector:
     matchLabels:
-      app: box
+      app: box-game
   template:
     metadata:
       labels:
-        app: box
+        app: box-game
     spec:
       containers:
-        - name: box
-          image: yash5090/box:latest # Replace with the actual image tag
+        - name: box-game
+          image: yash5090/box-game:latest # Replace with the actual image tag
           ports:
             - containerPort: 5000 # Replace with the port your Tetris game listens on
