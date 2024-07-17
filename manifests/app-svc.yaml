@@ -4,7 +4,7 @@ metadata:
   name: box-service
 spec:
   selector:
-    app: box
+    app: box-game
   ports:
     - protocol: TCP
       port: 5000
