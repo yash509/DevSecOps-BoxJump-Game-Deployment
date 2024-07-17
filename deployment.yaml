@@ -6,14 +6,14 @@ spec:
   replicas: 2  # Number of desired replicas
   selector:
     matchLabels:
-      app: box
+      app: box-game
   template:
     metadata:
       labels:
-        app: box
+        app: box-game
     spec:
       containers:
       - name: box
-        image: yash5090/box:latest
+        image: yash5090/box-game:latest
         ports:
         - containerPort: 5000
