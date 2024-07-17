@@ -13,7 +13,7 @@ spec:
         app: box-game
     spec:
       containers:
-      - name: box
+      - name: box-game
         image: yash5090/box-game:latest
         ports:
         - containerPort: 5000
